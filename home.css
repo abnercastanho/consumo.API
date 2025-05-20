@@ -127,4 +127,22 @@ nav a {
 .model-info h3 {
     margin: 0 0 10px;
 }
+/* Rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
 
+/* Links sociais no rodapé */
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
