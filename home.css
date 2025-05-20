@@ -14,3 +14,36 @@ header {
     padding: 20px 0;
     text-align: center;
 }
+/* Barra de navegação */
+nav {
+    background-color: #d50000; /* Vermelho Porsche */
+    padding: 10px 0;
+    text-align: center;
+}
+/* Barra de navegação */
+nav {
+    background-color: #d50000; /* Vermelho Porsche */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Links da navegação */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Seção Hero (Destaque) */
+.hero {
+    background-image: url('https://www.porsche.com/international/_miami_/homepage/default-/hero-poster-derivative/hero-poster-2212/2212-homepage-miami-hero-poster.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
