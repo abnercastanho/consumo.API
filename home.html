@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche - Home</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="" alt="Porsche Logo" class="logo">
+        <img src="https://www.porsche.com/international/_miami_/_shared_/img/porsche-claim.svg" alt="Porsche Logo" class="logo">
         <h1>Porsche</h1>
     </header>
     <nav>
         <a href="#home">Home</a>
-        <a href="#sobre">Modelos</a>
-        <a href="#cadastro">Configurador</a>
+        <a href="#models">Modelos</a>
+        <a href="#configurador">Configurador</a>
     </nav>
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Descubra o Mundo Porsche</h1>
             <p>Performance, luxo e inovação em cada detalhe.</p>
-            <a href="#sobre" class="btn">Sobre nós</a>
+            <a href="#models" class="btn">Explorar Modelos</a>
         </div>
     </section>
     <section class="models" id="models">
@@ -35,7 +36,7 @@
                 </div>
             </div>
             <div class="model-card">
-                <img src="" alt="Porsche Taycan">
+                <img src="https://www.porsche.com/international/_miami_/models/taycan/taycan-models/taycan/thumbnails/taycan-modelimage-sideshot.png" alt="Porsche Taycan">
                 <div class="model-info">
                     <h3>Porsche Taycan</h3>
                     <p>O futuro da mobilidade elétrica com desempenho inigualável.</p>
@@ -43,7 +44,7 @@
                 </div>
             </div>
             <div class="model-card">
-                <img src="" alt="Porsche Cayenne">
+                <img src="https://www.porsche.com/international/_miami_/models/cayenne/cayenne-models/cayenne/thumbnails/cayenne-modelimage-sideshot.png" alt="Porsche Cayenne">
                 <div class="model-info">
                     <h3>Porsche Cayenne</h3>
                     <p>SUV de alto desempenho com conforto e potência.</p>
@@ -53,12 +54,46 @@
         </div>
     </section>
     <footer id="contato">
-        <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">YouTube</a>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> (11) 4004-9191</li>
+                    <li><i class="fas fa-envelope"></i> contato@porsche.com.br</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. das Nações Unidas, 12901 - São Paulo/SP</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Revenda Autorizada</a></li>
+                    <li><a href="#">Test Drive</a></li>
+                    <li><a href="#">Financiamento</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit" class="btn">Assinar</button>
+                </form>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2023 Porsche. Todos os direitos reservados.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Porsche Brasil. Todos os direitos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
