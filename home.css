@@ -152,7 +152,7 @@ nav a:hover {
     overflow: hidden;
     width: 350px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
 }
 
@@ -161,15 +161,37 @@ nav a:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
+.model-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0.1) 100%);
+    z-index: 1;
+}
+
+.model-image-container {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
 .model-card img {
     width: 100%;
-    height: 220px;
+    height: 100%;
     object-fit: cover;
-    transition: transform 0.5s;
+    object-position: center 30%;
+    transition: transform 0.5s ease;
+    filter: brightness(0.95) contrast(1.05);
+    border-bottom: 3px solid #d50000;
 }
 
 .model-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    filter: brightness(1) contrast(1.1);
 }
 
 .model-info {
