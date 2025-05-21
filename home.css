@@ -46,7 +46,7 @@ nav a:hover {
 
 /* Seção Hero */
 .hero {
-    background-image: url('https://www.porsche.com/international/_miami_/homepage/default-/hero-poster-derivative/hero-poster-2212/2212-homepage-miami-hero-poster.jpg');
+    background-image: url('https://www.porsche.com/international/_miami_/models/911/911-turbo-models/911-turbo/derivatives/911-turbo-s-modelimage-sideshot/911-turbo-s-modelimage-sideshot.jpg');
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -84,8 +84,9 @@ nav a:hover {
 }
 
 .hero p {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    line-height: 1.8;
 }
 
 /* Botões */
