@@ -1,0 +1,187 @@
+/* Estilos para a página Sobre */
+.about-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('https://www.porsche.com/international/_miami_/models/911/911-gt3-rs/911-gt3-rs-models/derivatives/911-gt3-rs-modelimage-sideshot/911-gt3-rs-modelimage-sideshot.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.about-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-content p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.history-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.history-section h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    color: #000;
+    position: relative;
+}
+
+.history-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #d50000;
+}
+
+.history-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.history-text {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.history-text p {
+    margin-bottom: 20px;
+}
+
+.history-image {
+    flex: 1;
+}
+
+.history-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.models-about {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.models-about h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 60px;
+    color: #000;
+    position: relative;
+}
+
+.models-about h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #d50000;
+}
+
+.model-detail {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.model-detail.reverse {
+    flex-direction: row-reverse;
+}
+
+.model-image {
+    flex: 1;
+}
+
+.model-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+}
+
+.model-image img:hover {
+    transform: scale(1.02);
+}
+
+.model-description {
+    flex: 1;
+}
+
+.model-description h3 {
+    font-size: 2em;
+    color: #d50000;
+    margin-bottom: 20px;
+}
+
+.model-description p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.model-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.model-description li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.model-description li::before {
+    content: '•';
+    color: #d50000;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .history-content, 
+    .model-detail,
+    .model-detail.reverse {
+        flex-direction: column;
+    }
+    
+    .about-content h1 {
+        font-size: 2.5em;
+    }
+    
+    .about-hero {
+        height: 300px;
+    }
+    
+    .history-section,
+    .models-about {
+        padding: 50px 0;
+    }
+}
