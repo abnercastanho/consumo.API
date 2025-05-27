@@ -29,6 +29,21 @@ header h1 {
 }
 
 /* Navegação */
+
+.active {
+    color: #42ff42;
+    position: relative;
+}
+.active::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+}
+
 nav {
     background-color: #000;
     padding: 1rem 0;
