@@ -120,7 +120,19 @@ const pesquisarCep = async() => {
 
     if(cepValido (cep.value)){
         const dados = await fetch(url);
+        const addres = await dados.json();
+
+        // hasOWnProperty rerorna um valor booleano indicando se o objetivo possui a propriedade expecifica no parenteses
+        if(addres.hasOwnPorporty('rro')){
+            alert("CEP não encontrado");
+        } else{
+            preencherFormulario(addres);
+        }
     }
+}
+
+preencherFormulario = (endereco) => {
+    
 }
 
 //Função para limpar formulario
