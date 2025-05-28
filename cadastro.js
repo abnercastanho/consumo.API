@@ -116,8 +116,14 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
 const pesquisarCep = async() => {
     limparFormulario();
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
+
+    if(cepValido (cep.value)){
+        const dados = await fetch(url);
+    }
 }
 
+//Função para limpar formulario
 limparFormulario = () => {
     document.getElementById('rua').value = '';
     document.getElementById('bairro').value = '';  
