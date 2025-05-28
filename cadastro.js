@@ -113,3 +113,17 @@ document.addEventListener('DOMContentLoaded', function() {
 //verifica se o cep é valido
 const eNumero = (numero) => /^[0-9]+$/.test(numero);
 const cepValido = (cep) => cep.length == 8 && eNumero(cep);
+
+const pesquisarCep = async() => {
+    limparFormulario();
+}
+
+limparFormulario = () => {
+    document.getElementById('rua').value = '';
+    document.getElementById('bairro').value = '';  
+    document.getElementById('estado').value = '';      
+    document.getElementById('cidade').value = '';  
+}
+
+
+
