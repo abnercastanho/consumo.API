@@ -107,3 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 });
+
+'use strict'; // Modo restrito
+
+//verifica se o cep é valido
+const eNumero = (numero) => /^[0-9]+$/.test(numero);
+
