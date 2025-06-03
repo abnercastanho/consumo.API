@@ -65,24 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Máscara para CEP
-    const cepInput = document.getElementById('cep');
-    cepInput.addEventListener('input', function(e) {
-        let value = e.target.value.replace(/\D/g, '');
-        value = value.replace(/^(\d{5})(\d)/, '$1-$2');
-        e.target.value = value;
-        
-        // Buscar endereço via API quando CEP estiver completo
-        if (value.length === 9) {
-            buscarEndereco(value);
-        }
-        
-        // Limita a 8 dígitos
-        if (value.length > 9) {
-            e.target.value = e.target.value.slice(0, 9);
-        }
-    });
-    
     // Função para buscar endereço via API (exemplo com ViaCEP)
     function buscarEndereco(cep) {
         cep = cep.replace('-', '');
@@ -123,11 +105,13 @@ const pesquisarCep = async() => {
         const addres = await dados.json();
 
         // hasOWnProperty rerorna um valor booleano indicando se o objetivo possui a propriedade expecifica no parenteses
-        if(addres.hasOwnPorporty('rro')){
+        if(addres.hasOwnProperty('erro')){
             alert("CEP não encontrado");
         } else{
             preencherFormulario(addres);
         }
+    } else{
+        alert('CEP incorreto, tente novamente.')
     }
 }
 
@@ -142,8 +126,8 @@ preencherFormulario = (endereco) => {
 const limparFormulario = () => {
     document.getElementById('rua').value = '';
     document.getElementById('bairro').value = '';  
-    document.getElementById('estado').value = '';      
-    document.getElementById('cidade').value = '';  
+    document.getElementById('cidade').value = '';      
+    document.getElementById('estado').value = '';  
 }
 
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
